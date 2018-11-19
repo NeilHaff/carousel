@@ -1,0 +1,92 @@
+//ordering generally by type and  concentretic.
+
+@font-face { font-family: "Ropa Sans";
+  src: url('https://fonts.googleapis.com/css?family=Ropa+Sans'); }
+
+// _colours.scss
+$font: #00679a;
+$light: #ffffff;
+$main: #4dc79f ;
+$background: #e9eee7;
+$font-stack: ('Ropa Sans', #00679a);
+
+
+.background{
+  height: 100vh;
+  background-color: $background;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: $light;
+  margin-left: 15%;
+  margin-right: 15%;
+  overflow: hidden;
+}
+
+img{
+  margin:  10px 50px 0 50px;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+
+.buttons{
+  flex-direction: row;
+  display: flex;
+  top:400px;
+  position: sticky;
+  justify-content: center;
+}
+
+button{
+  background-color: $font ;
+  margin-right: 50px;
+  margin-left: 30px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: 'Ropa Sans', sans-serif;
+  color: white;
+}
+
+
+@media only screen and (max-width: 801px) {
+  .container{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  button {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url("./lefttarrow.png");
+    background-size: 30px 30px;
+    width: 30px;
+    color: transparent;
+  }
+  .button2 {
+    margin-left: 220px;
+    background-image: url("./rightarrow.png");
+  }
+  .buttons {
+    top: 200px;
+  }
+}
+
+h1{
+  font-family: 'Ropa Sans', sans-serif;
+  color: $font;
+  text-align: center;
+}
+
+h2{
+  max-width: 120px;
+  max-height: 40px;
+  margin:  10px 0 10px 50px;
+  overflow: hidden;
+  font-size: 2rem;
+  color: $font;
+}
+
